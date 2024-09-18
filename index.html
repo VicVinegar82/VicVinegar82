@@ -1,0 +1,54 @@
+<DOCTYPEhtml>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>  
+    <h1 id="title">Survive & Thrive Feedback Form</h1>
+    <p id="description">Let us know how your day went</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+      <label id="name-label">Name<input id="name" type="text" placeholder="Name" required></label><br>
+      <label id="number-label">Age<input id="number" type="number" min="12" max="120" placeholder="select"> </label><br>
+      <label id="email-label">Email<input id="email" type="email" placeholder="@" required></label> <br>
+      <label id="date-label">Date Attended<input id="date" type="text" placeholder="dd/mm/yy"</label>   
+    </fieldset> 
+    <fieldset>
+      <legend>Course Attended</legend>
+        <select id="dropdown">
+          <option>Select</option>
+          <option>Fire Lighting</option>
+          <option>Wilderness Cooking</option>
+          <option>Foraging</option>
+        </select>
+    </fieldset>  
+    <fieldset>
+      <legend>Instructor</legend>
+        <label for="Paul Fox"><input id="Paul Fox" type="radio" name="Instructor" value="1" class="inline">Paul Fox</label>
+        <label for="Colin Spaide"><input id="Colin Spaide" type="radio" name="Instructor" value="2" class="inline">Colin Spaide</label>
+    </fieldset>  
+    <fieldset class="form-group">
+      <legend>Rate your day</legend>
+      <label for="Great"><input id="Great" type="radio" name="rating" value="1" class="inline">Great</label>
+      <label for="Good"><input id="Good" type="radio" name="rating" value="2" class="inline">Good</label>
+      <label for="Average"><input id="Average" type="radio" name="rating" value="3"class="inline" >Average</label>
+      <label for="Poor"><input id="Poor" type="radio" name="rating" value="4"class="inline" >Poor</label>
+      <label for="Very Poor"><input id="Very Poor" type="radio" name="rating" value="5"class="inline" >Very Poor</label>
+    </fieldset>
+    <fieldset>
+      <legend>What did you enjoy?</legend>
+      <textarea id="positive-feedback" name="positive-feedback" rows="5" cols="90"></textarea>  
+    </fieldset>
+    <fieldset>
+      <legend>What would you change?</legend>
+      <textarea id="negative-feedback" name="negative-feedback" rows="5" cols="90"></textarea>
+    </fieldset>  
+    <fieldset>
+      <legend>Would you return?</legend>
+      <label for="yes"><input id="yes" type="checkbox" value="yes"class="inline" >Yes</label>
+      <label for="no"><input id="no" type="checkbox" value="no" class="inline">No</label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+    </form>
+  </html>
